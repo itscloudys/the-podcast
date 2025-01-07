@@ -1,0 +1,277 @@
+ /* Font imports */
+ @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+        
+ /* Reset and base styles */
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ body {
+     font-family: 'Arial', sans-serif;
+     background-color: #f8f3f0;
+     color: #333;
+ }
+
+ /* Navigation */
+ nav {
+     padding: 1rem 2rem;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     background-color: white;
+ }
+
+ .logo {
+     display: flex;
+     align-items: center;
+     gap: 0.5rem;
+     cursor: pointer;
+     font-family: 'Playfair Display', serif;
+     color: #cb2d3e;
+     font-weight: bold;
+     font-size: 25px;
+ }
+
+ .logo img {
+     width: 30px;
+ }
+
+ .nav-links {
+     display: flex;
+     gap: 2rem;
+ }
+
+ .nav-links a {
+     text-decoration: none;
+     color: #333;
+ }
+
+ .nav-links a:hover {
+    color: #cb2d3e;
+ }
+
+ .reach-out-btn {
+     background-color: #cb2d3e;
+     color: white;
+     padding: 0.5rem 1rem;
+     border-radius: 20px;
+     text-decoration: none;
+ }
+
+ /* About Section */
+ .about-section {
+     padding: 4rem 2rem;
+     text-align: center;
+ }
+
+ .about-title {
+     font-family: 'Playfair Display', serif;
+     color: #cb2d3e;
+     font-size: 3.5rem;
+     margin-bottom: 2rem;
+ }
+
+ .about-content {
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     gap: 2rem;
+     max-width: 1200px;
+     margin: 0 auto;
+ }
+
+ .about-image {
+     border-radius: 10px;
+     overflow: hidden;
+     width: 410px;
+ }
+
+ .about-image img {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+ }
+
+ .about-text p {
+    font-size: 24px;
+    font-family: 'Playfair Display', serif;
+    font-weight: lighter;
+ }
+
+ .tagline {
+     color: #cb2d3e;
+     font-style: italic;
+     margin: 2rem 0;
+ }
+
+ /* Press Section */
+ .press-section {
+     background-color: #cb2d3e;
+     padding: 2rem;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+ }
+
+ 
+
+ /* For Boss Babes Section */
+ .boss-babes {
+    padding: 4rem 2rem;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 2rem;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.boss-babes .content-center {
+    text-align: center;
+    grid-column: 2;
+}
+
+.boss-babes h2 {
+    font-family: 'Playfair Display', serif;
+    color: #cb2d3e;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.boss-babes p {
+    font-size: 24px;
+    font-family: 'Playfair Display', serif;
+    font-weight: lighter;
+}
+
+.section2 {
+    grid-column: 1;
+}
+
+.section3 {
+    grid-column: 3;
+}
+
+.section2 img,
+.section3 img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.listen-now-btn {
+    display: inline-block;
+    background-color: white;
+    color: #cb2d3e;
+    padding: 0.8rem 2rem;
+    border: 2px solid #cb2d3e;
+    border-radius: 25px;
+    text-decoration: none;
+    margin-top: 1rem;
+    transition: all 0.3s ease;
+}
+
+.listen-now-btn:hover {
+    background-color: #cb2d3e;
+    color: white;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .boss-babes {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .boss-babes .content-center {
+        grid-column: 1;
+        order: 1;
+    }
+    
+    .section2 {
+        grid-column: 1;
+        order: 2;
+    }
+    
+    .section3 {
+        grid-column: 1;
+        order: 3;
+    }
+}
+ /* Meet Section */
+ .meet-section {
+     padding: 2rem;
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     gap: 2rem;
+     max-width: 1200px;
+     margin: 0 auto;
+ }
+
+ .meet-card {
+     padding: 2rem;
+ }
+
+ .meet-card h3 {
+     font-family: 'Playfair Display', serif;
+     color: #cb2d3e;
+     font-size: 2rem;
+     margin-bottom: 1rem;
+ }
+
+ .meet-card img {
+     width: 100%;
+     border-radius: 10px;
+     margin-bottom: 1rem;
+ }
+
+ .meet-card p {
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 1rem;
+
+ }
+ .tags {
+     color: #cb2d3e;
+     font-style: italic;
+ }
+
+ /* New Episodes Banner */
+ .episodes-banner {
+     background-color: white;
+     padding: 1rem;
+     text-align: center;
+     white-space: nowrap;
+     overflow: hidden;
+ }
+
+ .episodes-banner p {
+     animation: scroll-left 20s linear infinite;
+     display: inline-block;
+ }
+
+ @keyframes scroll-left {
+     0% { transform: translateX(100%); }
+     100% { transform: translateX(-100%); }
+ }
+
+ /* Responsive Design */
+ @media (max-width: 768px) {
+     .about-content,
+     .meet-section {
+         grid-template-columns: 1fr;
+     }
+     
+     .press-section {
+         flex-wrap: wrap;
+         gap: 1rem;
+     }
+     
+     .about-title {
+         font-size: 2.5rem;
+     }
+ }
